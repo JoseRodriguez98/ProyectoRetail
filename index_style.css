@@ -1,12 +1,45 @@
-body, html{/*damos un fondo negro*/
-    background-color: black;
+body, html {
+    background-color: 	#f8f9fa
+
 }
-s
+
+
 .navbar-nav .nav-link{ /*con esto cambiamos la tipografia*/
-    font-family: sans-serif !important;
+    font-family: sans-serif;
 }
 
 .navbar-nav .nav-link:hover {/*cuando pasemos el mouse por encima va a cambiar de color*/
     color: yellow !important;
 }
 
+#carouselExampleAutoplaying {
+    margin: 0 auto;/*esto centra el carrusel*/
+    width: 100%; /* se puede cambiar 500px por el ancho que se desee */
+     /*aqui igual se puede cambiar para ajustar*/
+}
+
+#carouselExampleAutoplaying img {
+    width: 100%; /* Hace que las imágenes ocupen todo el ancho del contenedor */
+    height: 100%; /* Hace que las imágenes ocupen todo el alto del contenedor */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor sin distorsionarla */
+}
+
+.container {
+    padding: 0; /* Elimina cualquier relleno */
+    
+}
+
+.navbar-nav .nav-link {
+    font-family: "Fugaz One", sans-serif  !important;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.nav-link.hombre {
+    margin-right: 40px !important; /* Ajusta el valor según sea necesario */ 
+}
+
+.nav-link.mujer {
+    margin-left: 20px !important; /* Ajusta el valor según sea necesario */ 
+}
