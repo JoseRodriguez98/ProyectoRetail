@@ -37,7 +37,8 @@ body, html {
 }
 
 .nav-link.hombre {
-    margin-right: 40px !important; /* Ajusta el valor según sea necesario */ 
+    margin-right: 20px !important; /* Ajusta el valor según sea necesario */ 
+    margin-left: 20px !important;
 }
 
 .nav-link.mujer {

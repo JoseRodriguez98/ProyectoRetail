@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  
   <header><!--AQUI IRA LA NAVBAR QUE SACAMOS DE BOOTSTRAP-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -21,32 +24,52 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto"> <!--me-auto se utiliza para alinear elementos a la derecha son clases de utilidad de Bootstrap.-->
                     <li class="nav-item">
-                        <a class="nav-link hombre" href="#">Hombre</a>
+                        <a class="nav-link hombre" href="hombre.html">Hombre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mujer" href="#">Mujer</a>
+                        <a class="nav-link mujer" href="mujer.html">Mujer</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto"><!--ms-auto se utiliza para alinear elementos a la izquierda. son clases de utilidad de Bootstrap-->
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="imagenes/carrito-removebg-preview.png" width="150px"></a>
+                        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"><img src="imagenes/carrito-removebg-preview.png" width="150px"></a>
+                        <!--aqui el: data-bs-toggle="offcanvas" le dice que es un offcanva, y el: data-bs-target="#staticBackdrop" le pasa el id del offcanva de como está definido mas abajo y se mostrara lo que se defina allá abajo -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="imagenes/usuario_logo-removebg-preview.png" width="90px"></a>
+                        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"><img src="imagenes/usuario_logo-removebg-preview.png" width="90px"></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-</header>
-    <!--CARRUSEL CON IMAGENES-->
+  </header>
 
-
-    <div class="container-fluid bg-light">
-      <div class="row justify-content-center">
+    <!--ahora añadimos el div para el offcanva del perfil de usuario, codigo sacado de bootstrap-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <h1>Perfil de Usuario</h1>
+      </div>
+    </div>
+  
+    <!-- Código del offcanvas del Carrito -->
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+      <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel">Carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
           <div>
-            
+              Aqui estara el carrito
           </div>
+      </div>
+    </div>
+    
+  <div class="container-fluid bg-light"> <!--CARRUSEL CON IMAGENES-->
+      <div class="row justify-content-center">
           <div class="col-md-8">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="false">
               <!--data-bs-interval es una clase de bootstrap que sirve para cambiar el tiempo en que se demora en trancicionarse una imagen dentro de un carrusel-->
@@ -74,11 +97,6 @@
           </div>
       </div>
   </div>
-
-
-
-
-
 
 
 
