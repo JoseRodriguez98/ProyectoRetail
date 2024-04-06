@@ -26,6 +26,9 @@ body, html {
 
 .container {
     padding: 0; /* Elimina cualquier relleno */
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos con espacio igual entre ellos */
+    flex-direction: column;
     
 }
 
@@ -36,6 +39,13 @@ body, html {
     font-size: x-large;
 }
 
+.lala{
+    display: flex;
+    font-family: "Fugaz One" !important;
+    text-align:"center"
+
+}
+
 .nav-link.hombre {
     margin-right: 20px !important; /* Ajusta el valor según sea necesario */ 
     margin-left: 20px !important;
@@ -43,4 +53,12 @@ body, html {
 
 .nav-link.mujer {
     margin-left: 20px !important; /* Ajusta el valor según sea necesario */ 
+}
+
+.card {
+    flex-basis: calc(33.33% - 10px) !important; /* Establece el ancho de cada tarjeta a un tercio del contenedor con un pequeño margen */
+    margin-bottom: 20px !important; /* Añade espacio entre las filas */
+    border: 1px solid black !important;
+    padding: 10px !important;
+    box-sizing: border-box !important; /* Asegura que el padding no afecte el ancho de las tarjetas */
 }
